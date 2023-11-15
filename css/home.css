@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5vh;
+    font-size: 3rem;
+}
+
+img, video {
+    width: 20%;
+    margin-bottom: 5vh;
+}
+
+#big {
+    width: 90%;
+    height: 40vh;
+}
+
+@media screen and (max-width: 1300px) {
+    img, video {
+        width: 50%
+    }
+
+    #big {
+        height: 25vh;
+    }
+}

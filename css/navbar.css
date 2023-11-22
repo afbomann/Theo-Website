@@ -121,3 +121,21 @@ a:hover:after {
         display: none;
     }
 }
+
+@media screen and (max-height: 700px) {
+    .navbar {
+        height: 12dvh;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .navbar {
+        height: 14dvh;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {
+        height: 16dvh;
+    }
+}

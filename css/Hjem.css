@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/Theo5.jpg");
+    background-size: 50%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    margin-top: 5dvh;
+    color: #fff;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.images {
+    margin: 0 auto;
+    margin-top: 10dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.images img {
+    height: 50dvh;
+    border: 3px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    .images {
+        flex-direction: column;
+        gap: 5dvh;
+    }
+
+    .lastImage {
+        margin-bottom: 5dvh;
+    }
+}

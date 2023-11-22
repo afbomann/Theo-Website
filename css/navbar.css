@@ -1,0 +1,123 @@
+.navbar {
+    height: 10dvh;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+}
+
+.item, .lastItem, .logo {
+    list-style: none;
+}
+
+.item a, .lastItem a, .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+a::after {
+    margin-top: 2px;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.2s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.logo a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+
+.lastItem {
+    margin-right: 10%;
+}
+
+.hamburger, .hamburger-x {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 10%;
+}
+
+.hamburger div, .hamburger-x div {
+    transition: ease 0.2s;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    border-radius: 1rem;
+}
+
+.hamburger:hover, .hamburger-x:hover {
+    cursor: pointer;
+}
+
+.hamburger-x .line2 {
+    opacity: 0;
+}
+
+.hamburger-x .line1 {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-x .line3 {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.sidebar {
+    z-index: 999;
+    transition: all ease 0.3s;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    height: 60dvh;
+    position: fixed;
+    right: 0;
+    gap: 10dvh;
+}
+
+.sidebar li {
+    width: 0%;
+}
+
+.sidebar-active {
+    z-index: 999;
+    transition: all ease 0.3s;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60dvh;
+    position: fixed;
+    right: 0;
+    gap: 10dvh;
+}
+
+@media screen and (max-width: 750px) {
+    .hamburger, .hamburger-x {
+        display: flex;
+    }
+
+    .navbar .item, .navbar .lastItem {
+        display: none;
+    }
+}
